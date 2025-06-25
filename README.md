@@ -35,7 +35,7 @@ The analysis was performed in R (version 4.4.2) with the following package versi
 **Table 1.** R packages and versions used in the analysis.
 
 | Package                | Version |
-|------------------------|---------|
+|:-----------------------|:--------|
 | `dplyr`                | 1.1.4   |
 | `EnhancedVolcano`      | 1.24.0  |
 | `ggbeeswarm`           | 0.7.2   |
