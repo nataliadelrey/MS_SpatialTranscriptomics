@@ -1,0 +1,20 @@
+Sample ID	Biomaterial ID	Condition	Lesion type	Age	Sex	RIN	Duration (years)	Batch snRNA-seq	Batch Visium (ST)	Cause of death	Biomaterial description	Organ	Organ part
+CO1	CO37	Control	CTRL	84	Hombre	6,1	NA	4	3	Bladder cancer, pneumonia	non-inflammed brain white matter control	Brain	White Matter
+CO2	CO40	Control	CTRL	61	Mujer	7,8	NA	1	1	Ovarian cancer	non-inflammed brain white matter control	Brain	White Matter
+CO3	CO41	Control	CTRL	54	Hombre	7,2	NA	4	3	Lung cancer	non-inflammed brain white matter control	Brain	White Matter
+CO4	CO45	Control	CTRL	77	Hombre	6,4	NA	4	NA	cardio pulmonary degeneration, prostate cancer, old age, Alzheimers	non-inflammed brain white matter control	Brain	White Matter
+CO5	CO74	Control	CTRL	84	Mujer	7	NA	2	2	Heart failure, kidney impairment	non-inflammed brain white matter control	Brain	White Matter
+CO6	CO85	Control	CTRL	81	Mujer	5,9	NA	3	1	NA	non-inflammed brain white matter control	Brain	White Matter
+CO7	CO96	Control	CTRL	68	Mujer	7,7	NA	NA	1	Aspiration pneumonia; Parkinson’s disease; atherosclerosis	non-inflammed brain white matter control	Brain	White Matter
+MS1	MS94	MS	EM-CA	42	Mujer	8,7	6	NA	1	Bronchial pneumonia, Multiple Sclerosis	brain white matter multiple sclerosis lesion	Brain	White Matter
+MS2	MS197D	MS	EM-CA	52	Mujer	9	NA	4	1	Bronchial pneumonia, Multiple Sclerosis	brain white matter multiple sclerosis lesion	Brain	White Matter
+MS3	MS197U	MS	EM-CA	52	Mujer	9	NA	NA	1	Bronchial pneumonia, Multiple Sclerosis	brain white matter multiple sclerosis lesion	Brain	White Matter
+MS4	MS229	MS	EM-CA	53	Hombre	7	16	4	1	Bronchial pneumonia	brain white matter multiple sclerosis lesion	Brain	White Matter
+MS5	MS377N	MS	EM-CA	50	Mujer	6,5	23	1	1	Aspiration pneumonia	brain white matter multiple sclerosis lesion	Brain	White Matter
+MS6	MS377T	MS	EM-CA	50	Mujer	8,9	23	4	3	Aspiration pneumonia	brain white matter multiple sclerosis lesion	Brain	White Matter
+MS7	MS377I	MS	EM-CA	50	Mujer	6,5	23	1	1	Aspiration pneumonia	brain white matter multiple sclerosis lesion	Brain	White Matter
+MS8	MS411	MS	EM-CA	61	Hombre	5,9	29	1	1	Pneumonia, Multiple Sclerosis	brain white matter multiple sclerosis lesion	Brain	White Matter
+MS9	MS497I	MS	EM-CI	60	Mujer	6,1	29	3	1	Aspiration pneumonia	brain white matter multiple sclerosis lesion	Brain	White Matter
+MS10	MS497T	MS	EM-CI	60	Mujer	6,1	29	2	1	Aspiration pneumonia	brain white matter multiple sclerosis lesion	Brain	White Matter
+MS11	MS549H	MS	EM-CI	50	Hombre	8	29	2	1	Multiple Sclerosis	brain white matter multiple sclerosis lesion	Brain	White Matter
+MS12	MS549T	MS	EM-CI	50	Hombre	8	29	3	1	Multiple Sclerosis	brain white matter multiple sclerosis lesion	Brain	White Matter
