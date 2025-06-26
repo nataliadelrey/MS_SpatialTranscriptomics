@@ -312,26 +312,11 @@ cell_metadata$anotacion <- with(
                 ifelse(`hmrf_Top500 k=9 b=15.00` == 4 & Condition == "MS", "SB Perilesional",
                        ifelse(`hmrf_Top500 k=9 b=15.00` %in% c(5, 9), "SG",  
                               ifelse(`hmrf_Top500 k=9 b=15.00` %in% c(3, 6, 8) & Condition == "MS", "NL",
-                                            ifelse(`hmrf_Top500 k=9 b=15.00` == 7, "BL", NA)))))))
+                                            ifelse(`hmrf_Top500 k=9 b=15.00` == 7, "BL", "NA")))))))
 
 mobj = Giotto::createCellMetaObj(cell_metadata)
 combo_filt <- Giotto::setCellMetadata(gobject = combo_filt, 
                                       x = mobj)
-
-Giotto::spatPlot2D(gobject = combo_filt,
-                   cell_color = "anotacion", 
-                   group_by = "list_ID",
-                   point_size = 1.3,  
-                   coord_fix_ratio = 1,
-                   cow_n_col = 6,
-                   axis_text = 7,
-                   show_legend = FALSE,
-                   save_plot = TRUE,
-                   save_param = list(save_dir = "../Graficos",
-                                     save_folder = "PatronesEspaciales/HMRF",
-                                     save_name = "anotacion",
-                                     base_width = 18,   
-                                     base_height = 14))
 
 
 ################################################################################
@@ -346,5 +331,53 @@ Giotto::saveGiotto(gobject = combo_filt,
                    image_filetype = "PNG",
                    include_feat_coord = TRUE,
                    verbose = TRUE)
+
+
+################################################################################
+#----------------------------- Visualize results ------------------------------#
+################################################################################
+Giotto::spatPlot2D(gobject = combo_filt,
+                   cell_color = "anotacion",
+                   group_by = "list_ID",    
+                   cell_color_code = c("BL" = "#D19693",
+                                       "NL" = "#B84136", 
+                                       "SB Perilesional" = "#FBDDDD",
+                                       "SB Sana" = "#FFECED",
+                                       "SG" = "#C4B5B7",
+                                       "NA" = "white"), 
+                   group_by_subset = c("CO37", "CO40", "MS377I", 
+                                       "MS377N", "MS497I", "MS549T"),
+                   point_size = 1.8,       
+                   cow_n_col = 6,
+                   axis_text = 7,
+                   title = "",
+                   show_legend = FALSE,
+                   save_plot = TRUE,
+                   save_param = list(save_dir = "../Graficos",
+                                     save_folder = "PatronesEspaciales/HMRF",
+                                     save_name = "anotacion",
+                                     base_width = 25,   
+                                     base_height = 5))  
+
+Giotto::spatPlot2D(gobject = combo_filt,
+                   cell_color = "anotacion", 
+                   group_by = "list_ID",
+                   cell_color_code = c("BL" = "#D19693",
+                                       "NL" = "#B84136", 
+                                       "SB Perilesional" = "#FBDDDD",
+                                       "SB Sana" = "#FFECED",
+                                       "SG" = "#C4B5B7",
+                                       "NA" = "white"),
+                   point_size = 1.3,  
+                   coord_fix_ratio = 1,
+                   cow_n_col = 6,
+                   axis_text = 7,
+                   show_legend = FALSE,
+                   save_plot = TRUE,
+                   save_param = list(save_dir = "../Graficos",
+                                     save_folder = "PatronesEspaciales/HMRF",
+                                     save_name = "anotacion_all",
+                                     base_width = 18,   
+                                     base_height = 14))
 #------------------------------------------------------------------------------#
 #------------------------------------------------------------------------------#                        

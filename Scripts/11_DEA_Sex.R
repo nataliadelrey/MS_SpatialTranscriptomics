@@ -57,7 +57,7 @@ lc <- EnhancedVolcano::EnhancedVolcano(LC_F_VS_M,
                                        lab = LC_F_VS_M$feats,                 
                                        x = "summary.logFC",                
                                        y = "FDR",                      
-                                       title = "Núcleo lesion: Mujer VS Hombre",
+                                       title = "Núcleo lesión: Mujer VS Hombre",
                                        subtitle = NULL,
                                        pCutoff = 0.05,   
                                        colAlpha = 1,
@@ -137,8 +137,8 @@ cat("WMP VS LC Male - DEGs for FDR < 0.05 and logFC absolute > 0.5:", nrow(DEG_M
 #----------------------------- Visualize results ------------------------------#
 ################################################################################
 # Differences between men and women in both lesion core and white matter
-LC_WM <- list("Núcleo Lesion EM" = DEG_LC$feats,
-              "Sustancia blanca CTRL" = DEG_WM$feats)
+LC_WM <- list("Núcleo Lesión EM" = DEG_LC$feats,
+              "Sustancia Blanca CTRL" = DEG_WM$feats)
 LC_WM_Venn = ggvenn(LC_WM, 
                     fill_color = c("#B84136", "#EDE0E0"), 
                     stroke_size = 0.5, 
@@ -171,16 +171,17 @@ MS = Giotto::subsetGiotto(combo_filt,
                               combo_filt)[Condition == "MS" & 
                                             (anotacion == "SB Perilesional" | 
                                                anotacion == "NL")]$cell_ID)
+feats <- unique(c(setdiff(DEG_W$feats, DEG_M$feats), 
+                  setdiff(DEG_M$feats, DEG_W$feats)))
+                      
 Giotto::plotMetaDataHeatmap(gobject = MS,
                             expression_values = "default",
-                            selected_feats = unique(c(setdiff(DEG_W$feats, 
-                                                              DEG_M$feats), 
-                                                      setdiff(DEG_M$feats, 
-                                                              DEG_W$feats))),
+                            selected_feats = feats,
                             metadata_cols = c("Sex", "anotacion"),
-                            first_meta_col = "Sex",
-                            second_meta_col = "anotacion",
+                            first_meta_col = "anotacion",
+                            second_meta_col = "Sex",
                             show_values = "zscores",
+                            custom_feat_order = sort(feats, decreasing = TRUE),
                             x_text_size = 12, 
                             show_plot = TRUE,
                             y_text_size = 11,

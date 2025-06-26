@@ -319,7 +319,7 @@ topgenes_scran <- scran_markers[, head(.SD, 3), by = "cluster"]$feats
 Giotto::plotMetaDataHeatmap(gobject = combo_filt,
                             expression_values = "default",
                             selected_feats = unique(topgenes_scran),
-                            metadata_cols = "leiden_kNN.050", "Lesion.type",
+                            metadata_cols = "leiden_kNN.050",
                             show_values = "zscores",
                             x_text_size = 10, y_text_size = 10,
                             custom_cluster_order = c("1", "2", "3", "4", "5", 
