@@ -1,8 +1,8 @@
 # Transcriptome analysis with spatial resolution for the study of sex differences in multiple sclerosis
 
-## Master's Thesis in Bioinformatics
+## Master's Thesis in Bioinformatics - Universitat de València
 
-This repository contains all the code and resources used for the spatial transcriptomic analysis of multiple sclerosis (MS) tissue samples and healthy control tissue, focusing on sex differences and using the workflow integrated in the [`Giotto`](https://drieslab.github.io/Giotto_website/) package.
+This repository contains all the code and resources used for the spatial transcriptomic analysis of multiple sclerosis (MS) lesion tissue samples and healthy control tissue, focusing on sex differences and using the workflow integrated in the R package [`Giotto`](https://drieslab.github.io/Giotto_website/).
 
  
 
@@ -10,27 +10,27 @@ This repository contains all the code and resources used for the spatial transcr
 
 ### **Source:**
 
--   The raw data comes from the study by [Lerma-Martin et al., 2024](https://doi.org/10.1038/s41593-024-01796-z), generated using 10x Genomics Visium technology.
+-   The raw data comes from the study by [Lerma-Martin et al. (2024)](https://doi.org/10.1038/s41593-024-01796-z), which used *10x Genomics Visium* technology for spatial transcriptomics and *10x Genomics Chromium* technology for snRNA-Seq.
 
 ### **Acess:**
 
--   Download the data from GEO using the provided Bash scripts (`.sh`). These scripts will automatically organize the files into the output format required by Space Ranger.
+-   Download the data from GEO ([GSE279183](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE279183)) using the provided Bash scripts (`.sh`). These scripts will automatically organize the files into the output format required by Space Ranger.
 
  
 
 ## Bioinformatics Analysis
 
-1.  Run the Bash scripts to download and organize the raw data.
+1.  Run the **Bash scripts** to download and organize the raw data.
 
-2.  Execute the R scripts in numerical order for data processing, bioinformatics analysis and results visualization.
+2.  Execute the **R scripts** in numerical order for data processing, bioinformatics analysis and results visualization.
 
-3.  Scripts generate all figures and plots included in the study.
+> Scripts generate all figures and plots included in the manuscript of the Master's Thesis.
 
  
 
 ## Requeriments
 
-The analysis was performed in R (version 4.4.2) with the following package versions:
+The full analysis was performed in R (version 4.4.2), with the following package versions:
 
 **Table 1.** R packages and versions used in the analysis.
 
