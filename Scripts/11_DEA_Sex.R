@@ -1,4 +1,4 @@
-# ST Spatial Domains
+# ST Differential Expression Analysis: sex differences
 # Author: Natalia del Rey Díez
 # Date: 25/05/2024
 
